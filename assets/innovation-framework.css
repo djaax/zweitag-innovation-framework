@@ -1,0 +1,89 @@
+.if-container {
+	display: flex;
+	display: -webkit-box;
+}
+
+.if-container .col-right, .if-container .col-left {
+	width: 300px;
+}
+
+.if-container .col-right > div, .if-container .col-left > div {
+	margin-bottom: 50px;
+	opacity: 0.3;
+	-webkit-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.if-container .col-right > div.active, .if-container .col-left > div.active {
+	opacity: 1;
+}
+
+
+/*
+ * Start Interactive
+ */
+.innovation-framework-interactive {
+	background-image: url(if/if-sprite.png);
+	background-size: 2000px 1000px;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	padding: 0 20px;
+}
+
+.innovation-framework-interactive .if-hover-zone { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	// border: 1px solid red;
+}
+
+.innovation-framework-interactive .if-hover-zone.s01 {
+	width: 270px;
+    height: 90px;
+    top: 25px;
+    left: 120px;
+}
+
+.innovation-framework-interactive .if-hover-zone.s02 {
+	left: 380px;
+    height: 140px;
+    width: 130px;
+    top: 120px;
+}
+
+.innovation-framework-interactive .if-hover-zone.s03 {
+	height: 120px;
+    width: 220px;
+    top: 280px;
+    left: 160px;
+}
+
+.innovation-framework-interactive .if-hover-zone.s04 {
+	top: 250px;
+    height: 150px;
+    width: 370px;
+    left: 80px;
+}
+
+.innovation-framework-interactive .if-hover-zone.s05 {
+	height: 130px;
+    width: 140px;
+    top: 120px;
+}
+
+.innovation-framework-interactive .if-hover-zone.s06 {
+	top: 114px;
+    left: 139px;
+    height: 137px;
+    width: 242px;
+}
+
+.innovation-framework-interactive.s06 { background-position: -500px 0; }
+.innovation-framework-interactive.s01 { background-position: -1000px 0; }
+.innovation-framework-interactive.s02 { background-position: -1500px 0; }
+.innovation-framework-interactive.s04 { background-position: -500px -500px; }
+.innovation-framework-interactive.s03 { background-position: -1000px -500px; }
+.innovation-framework-interactive.s05 { background-position: -1500px -500px; }
+/** END INTERACTIVE **/
